@@ -1,0 +1,59 @@
+@font-face {
+    font-family: inter;
+    src: url("./assents/font/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: inter;
+
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    /*ativa a propriedade de alinhamento*/
+    flex-direction: row;
+    /*coloca os elementos na horizontal*/
+}
+
+li {
+    list-style: none;
+    /*remove os pontos das lista*/
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#logo {
+    height: 120px;
+    width: 120px;
+}
+
+.btn-logo {
+    width: 70px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #EB662B;
+    border: 1px solid #EB662B;
+    font-weight: bold;
+    font-size: 15px;
+
+}
