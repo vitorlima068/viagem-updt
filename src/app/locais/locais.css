@@ -1,0 +1,13 @@
+.texto-paises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+}
+.texto-titulo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px;
+}
