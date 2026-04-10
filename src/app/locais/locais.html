@@ -1,79 +1,17 @@
-<section>
-        <p class="texto-titulo">Trending destinations</p>
-        <div class="paises">
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img1.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Paris</p>
-                        <p class="info-paises">100+ Tours</p>
-                    </div>
-                </div>
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img2.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Singapore</p>
-                        <p class="info-paises">300+ Tours</p>
-                    </div>
-                </div>
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img3.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Roma</p>
-                        <p class="info-paises">400+ Tours</p>
-                    </div>
-                </div>
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img4.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Bangkok</p>
-                        <p class="info-paises">100+ Tours</p>
-                    </div>
-                </div>
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img5.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Bali</p>
-                        <p class="info-paises">600+ Tours</p>
-                    </div>
-                </div>
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img6.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Phuket</p>
-                        <p class="info-paises">200+ Tours</p>
-                    </div>
-                </div>
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img7.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Tokyo</p>
-                        <p class="info-paises">700+ Tours</p>
-                    </div>
-                </div>
-                <div class="caixa-paises">
-                    <div class="img-paises">
-                        <img src="./assents/img8.png" alt="">
-                    </div>
-                    <div class="texto-paises">
-                        <p class="titulo-paises">Cappadocia</p>
-                        <p class="info-paises">900+ Tours</p>
-                    </div>
-                </div>
+<section class="Trending-destinations">
+    <h2 class="main-title">{{ tituloMaior }}</h2>
 
-            </div>
-            
-    </section>
+    <div class="paises-destinos">
+         @for (item of diferenciais; track item.titulo) {
+            <div class="destinos-card"></div>
+
+             <img [src]="item.imagem" [alt]="item.titulo" class="destino-icon">
+             <h3 class="feature-title"> {{ item.titulo}}</h3>
+                <p class="feature-description"> {{item.descricao}}</p>
+
+
+         }
+    </div>
+ 
+
+</section>

@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Menu } from './menu/menu'
-import { Card } from './card/card'
-import { Locais } from './locais/locais'
+import { Menu } from './menu/menu';
+// import { Locais } from './locais/locais';
+import {Cards} from './cards/cards'
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, Card, Locais],
+  imports: [RouterOutlet, Menu, Cards],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('serve');
+  protected readonly title = signal('projeto');
 }
